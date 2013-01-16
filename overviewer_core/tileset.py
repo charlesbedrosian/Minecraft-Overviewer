@@ -528,6 +528,7 @@ class TileSet(object):
                 last_rendertime = self.max_chunk_mtime,
                 imgextension = self.imgextension,
                 isOverlay = isOverlay,
+                dimension = 'NORMAL' if 'overworld' == self.options.get('dimension') else self.options.get('dimension').upper(),
                 poititle = self.options.get("poititle")
                 )
 
